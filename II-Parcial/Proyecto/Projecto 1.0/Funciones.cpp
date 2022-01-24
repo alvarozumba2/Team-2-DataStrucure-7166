@@ -1,4 +1,4 @@
-#include "funciones.h"
+#include "Funciones.h"
 
 int menu(){
     int seguir=0;
