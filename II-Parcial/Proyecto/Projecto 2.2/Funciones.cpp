@@ -3,16 +3,18 @@
 int Funciones::menu() {
     int seguir = 0;
     system("cls");
-    cout << "________________________________________________________________________________" << endl;
-    cout << "\t\t\t\tF1 o H para ayuda" << endl;
-    cout << "________________________________________________________________________________" << endl;
-    cout << "  1 - Realizar una operaci%cn combinada" << endl;
-    cout << "  2 - Realizar una ecuaci%cn " << endl;
-    cout << "________________________________________________________________________________" << endl;
+    cout << "|--------------------------------------------------------------------------------|" << endl;
+    cout << "|                       Bienvenido a Calculaneitor 2000                          |" << endl;
+    cout << "| Que deseas Hacer?                                                              |" << endl;
+    cout << "|--------------------------------------------------------------------------------|" << endl;
+    cout << "|  1 - Comprobar una operacion aritmetica                                        |" << endl;
+    cout << "|  2 - Pixelar una Imagen                                                        |" << endl;
+    cout << "|  3 - Obtener informacion del Programa                                          |" << endl;
+    cout << "|--------------------------------------------------------------------------------|\n\n" << endl;
     do {
         //setbuf(stdin, NULL);
         seguir = _getch();
-    } while (seguir != ESC && seguir != F1 && seguir != 'h' && seguir != 'H' && !(seguir > '0' && seguir < '3'));
+    } while (seguir != ESC && !(seguir > '0' && seguir < '4'));
     return seguir;
 }
 
@@ -27,13 +29,14 @@ int Funciones::operacionCombinada() {
         double output;
         //pString = &input;
         system("cls");
-        cout << "________________________________________________________________________________" << endl;
-        cout << "\tIngrese la operaci%cn:\n" << endl;
+        cout << "|--------------------------------------------------------------------------------|" << endl;
+        cout << "|Ingrese la expresion aritmetica que desea comprobar o realizar:                 |" << endl;
+        cout << "|--------------------------------------------------------------------------------|\n" << endl;
         //cin >> pString;
         //strcpy_s(pString, inString);
         //gets_s(pString);
         getString(TAM, pString);
-        cout << "________________________________________________________________________________" << endl;
+        cout << "|--------------------------------------------------------------------------------|" << endl;
         if (validar(pString) < 0)
         {
             //printf("%c", BIP);
@@ -41,7 +44,7 @@ int Funciones::operacionCombinada() {
         }
         else if (validar(pString) > 0) {
             system("cls");
-            cout << "________________________________________________________________________________" << endl;
+            cout << "|--------------------------------------------------------------------------------|" << endl;
             int largo;
             printf(" %s", pString);
             while (strchr(pString, '(') != NULL) {
@@ -56,10 +59,11 @@ int Funciones::operacionCombinada() {
         }
         else
         {
-            printf("\n\t\t     \\(o_o')/ %cy que se supone que haga?\n\n", 168);
+            printf("\n\t          \\(o_o')/ no hay nada que resolver o analizar\n\n", 168);
         }
-        printf("________________________________________________________________________________\n");
-        printf("\t\t\tPulse espacio para continuar\n");
+        printf("|--------------------------------------------------------------------------------|\n");
+        printf("|           Pulse la tecla espacio para ingresar una expresion nuevamente        |\n");
+        printf("|--------------------------------------------------------------------------------|\n");
         do {
             continuar = 0;
             continuar = _getch();

@@ -43,13 +43,22 @@ int main() {
         case '2':
             //seguir=ecuacion();
             break;
-        case F1: case 'h': case 'H':
+        case '3':
             system("cls");
-            cout << "________________________________________________________________________________" << endl;
-            cout << "  Este progama resuelve cualquier operacion matematica que el usuario desee.\n" << endl;
-            cout << "  Caracteres validos ()*+,-./0123456789^\n\n" << endl;
-            cout << "  Use ESC para salir y Retroceso o 'b' para volver al menu anterior" << endl;
-            cout << "________________________________________________________________________________" << endl;
+            cout << "|--------------------------------------------------------------------------------|" << endl;
+            cout << "|                   UNIVERSIDAD DE LAS FUERZAS ARMADAS 'ESPE'                    |" << endl;
+            cout << "|                            INGENIERIA EN SOFTWARE                              |" << endl;
+            cout << "|                             ESTRUCTURA DE DATOS                                |" << endl;
+            cout << "|                                                                                |" << endl;
+            cout << "|  El programa esta disenado para resolver cualquiera operacion aritmetica que   |" << endl;
+            cout << "|  el usuario desee, ademas de implementar una herramienta para pixelar imagenes |" << endl;
+            cout << "|                                                                                |" << endl;
+            cout << "|  Los operadores y caracteres que el programa acepta son:                       |" << endl;
+            cout << "|  ()*+,-./0123456789^                                                           |" << endl;
+            cout << "|                                                                                |" << endl;
+            cout << "|  Para salir presione la tecla ESC                                              |" << endl;
+            cout << "|  Para regresar al menu principal presione la tecla hacia atras o la letra b    |" << endl;
+            cout << "|--------------------------------------------------------------------------------|" << endl;
             do {
                 //setbuf(stdin, NULL);
                 seguir = _getch();
