@@ -36,7 +36,8 @@ int Funciones::operacionCombinada() {
         cout << "________________________________________________________________________________" << endl;
         if (validar(pString) < 0)
         {
-            printf("%c", BIP);
+            //printf("%c", BIP);
+            Beep(523,500);
         }
         else if (validar(pString) > 0) {
             system("cls");
