@@ -8,6 +8,7 @@
 #include <string.h>
 #include <string>
 #include <conio.h>
+#include <windows.h> // libreria para modificar la pantalla
 
 #define TAM 1000
 #define F1 59
