@@ -34,6 +34,7 @@ int main() {
     Marquee mark1("  AGUAS  FELIX  IPIALES  ZUMBA  ");
     cout << " " << endl;
     mark1.trans();
+    cout << "/////////////// Calculadora de expresiones aritmeticas ///////" << endl;
     while (seguir != ESC) {
         switch (f.menu()) {
         case '1':
