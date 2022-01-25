@@ -9,7 +9,6 @@ using namespace std;
 class Marquee
 {
 public:
-
     /**
      * @brief Construct a new Marquee object
      *
@@ -51,6 +50,7 @@ public:
      *
      */
     void trans();
+
 private:
     string marquesina;
     int index = 0;
@@ -75,7 +75,7 @@ void Marquee::cursorHide()
 
 void Marquee::coordenadas(int x, int y, string format, ...)
 {
-    const char* c = format.c_str();
+    const char *c = format.c_str();
     va_list args;
     va_start(args, format);
     printf("\033[%d;%dH", x, y);
@@ -93,7 +93,7 @@ COORD Marquee::GetConsoleCursorPosition(HANDLE hConsoleOutput)
     }
     else
     {
-        COORD invalid = { 10, 10 };
+        COORD invalid = {10, 10};
         return invalid;
     }
 }
@@ -112,7 +112,8 @@ void Marquee::marquee()
         msg = "\t\t\t\t" + logo.substr(index % stringSize) + logo.substr(0, index % stringSize);
         coordenadas(0, 0, msg);
         Sleep(velocidad);
-        if (GetAsyncKeyState(VK_RETURN)) {
+        if (GetAsyncKeyState(VK_RETURN))
+        {
             ciclo = false;
             break;
         }

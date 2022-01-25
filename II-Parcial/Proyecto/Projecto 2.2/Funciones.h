@@ -1,7 +1,6 @@
 #ifndef FUNCIONES_H
 #define FUNCIONES_H
 
-
 #include <iostream>
 #include <stdio.h>
 #include <stdlib.h>
@@ -17,23 +16,22 @@
 #define Atras 8
 #define BIP 7
 
-
 using namespace std;
 
-class Funciones {
+class Funciones
+{
 private:
-
 public:
     int menu();
     int operacionCombinada();
-    char* getString(int, char*);
-    int validar(char*);
-    int parentesis(char*);
-    int terminos(char*);
-    double calculoSimple(char*, int);
-    void insertNumberInString(char*, int, double, char*);
-    double calculoTermino(char*, int);
-    double* numbersSetter(char*, int);
+    char *getString(int, char *);
+    int validar(char *);
+    int parentesis(char *);
+    int terminos(char *);
+    double calculoSimple(char *, int);
+    void insertNumberInString(char *, int, double, char *);
+    double calculoTermino(char *, int);
+    double *numbersSetter(char *, int);
     double potencia(double, double);
 };
 
