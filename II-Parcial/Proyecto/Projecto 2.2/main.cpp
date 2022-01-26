@@ -1,3 +1,17 @@
+/** UNIVERSIDAD DE LAS FUERZAS ARMADAS "ESPE"
+*			INGENIERIA SOFTWARE
+*
+*AUTORES: Gustavo Aguas
+*Cristian Felix
+*Carlos Ipiales
+*Alvaro Zumba
+*TEMA: 
+*FECHA DE CREACION : 15/01/2022
+*FECHA DE ULTIMA MODIFICACION: 25/01/2022
+* */
+
+
+
 #include <iostream>
 #include <thread>
 #include <Windows.h>
