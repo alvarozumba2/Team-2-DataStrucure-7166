@@ -18,6 +18,12 @@
 #include "Marquee.h"
 #include "Funciones.cpp"
 
+/**
+ * @brief marquee_limit
+ * 
+ * @param text 
+ * @param limite 
+ */
 void marquee_limit(std::string text, size_t limite)
 {
     bool ciclo = true;
@@ -38,6 +44,11 @@ void marquee_limit(std::string text, size_t limite)
     }
 }
 
+/**
+ * @brief main
+ * 
+ * @return int 
+ */
 int main()
 {
 

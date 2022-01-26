@@ -1,3 +1,13 @@
+/**
+ * @file Marquee.h
+ * @author Gustavo Aguas, Cristian Felix, Carlos Ipiales, Alvaro Zumba
+ * @brief Marquee.h
+ * @version 2.4
+ * @date 2022-01-25
+ * 
+ * @copyright Copyright (c) 2022
+ * 
+ */
 #pragma once
 #include <iostream>
 #include <string.h>
@@ -6,6 +16,10 @@
 #include <conio.h>
 using namespace std;
 
+/**
+ * @brief class Marquee
+ * 
+ */
 class Marquee
 {
 public:
@@ -56,11 +70,20 @@ private:
     int index = 0;
 };
 
+/**
+ * @brief Construct a new Marquee:: Marquee object
+ * 
+ * @param marquee 
+ */
 Marquee::Marquee(string marquee)
 {
     this->marquesina = marquee;
 }
 
+/**
+ * @brief cursorHide
+ * 
+ */
 void Marquee::cursorHide()
 {
     HANDLE hwnd;
@@ -73,6 +96,14 @@ void Marquee::cursorHide()
     SetConsoleCursorInfo(hwnd, &info);
 }
 
+/**
+ * @brief coordenadas
+ * 
+ * @param x 
+ * @param y 
+ * @param format 
+ * @param ... 
+ */
 void Marquee::coordenadas(int x, int y, string format, ...)
 {
     const char *c = format.c_str();
@@ -84,6 +115,12 @@ void Marquee::coordenadas(int x, int y, string format, ...)
     fflush(stdout);
 }
 
+/**
+ * @brief GetConsoleCursorPosition
+ * 
+ * @param hConsoleOutput 
+ * @return COORD 
+ */
 COORD Marquee::GetConsoleCursorPosition(HANDLE hConsoleOutput)
 {
     CONSOLE_SCREEN_BUFFER_INFO cbsi;
@@ -98,6 +135,10 @@ COORD Marquee::GetConsoleCursorPosition(HANDLE hConsoleOutput)
     }
 }
 
+/**
+ * @brief marquee
+ * 
+ */
 void Marquee::marquee()
 {
     string logo = marquesina;
@@ -120,6 +161,10 @@ void Marquee::marquee()
     }
 }
 
+/**
+ * @brief trans
+ * 
+ */
 void Marquee::trans()
 {
     COORD cord;

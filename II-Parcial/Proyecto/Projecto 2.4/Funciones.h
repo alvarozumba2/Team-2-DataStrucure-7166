@@ -1,3 +1,13 @@
+/**
+ * @file Funciones.h
+ * @author Gustavo Aguas, Cristian Felix, Carlos Ipiales, Alvaro Zumba
+ * @brief Funciones.h
+ * @version 2.4
+ * @date 2022-01-25
+ * 
+ * @copyright Copyright (c) 2022
+ * 
+ */
 #ifndef FUNCIONES_H
 #define FUNCIONES_H
 
@@ -18,6 +28,10 @@
 
 using namespace std;
 
+/**
+ * @brief Class Funciones
+ * 
+ */
 class Funciones
 {
 private:

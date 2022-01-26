@@ -1,5 +1,19 @@
+/**
+ * @file Funciones.cpp
+ * @author Gustavo Aguas, Cristian Felix, Carlos Ipiales, Alvaro Zumba
+ * @brief Funciones.cpp
+ * @version 2.4
+ * @date 2022-01-25
+ *
+ * @copyright Copyright (c) 2022
+ *
+ */
 #include "Funciones.h"
-
+/**
+ * @brief menu
+ *
+ * @return int
+ */
 int Funciones::menu()
 {
     int seguir = 0;
@@ -20,6 +34,12 @@ int Funciones::menu()
     } while (seguir != ESC && !(seguir > '0' && seguir < '4'));
     return seguir;
 }
+
+/**
+ * @brief operacionCombinada
+ *
+ * @return int
+ */
 
 int Funciones::operacionCombinada()
 {
@@ -84,6 +104,13 @@ int Funciones::operacionCombinada()
     return continuar;
 }
 
+/**
+ * @brief getString
+ *
+ * @param large
+ * @param aux
+ * @return char*
+ */
 char *Funciones::getString(int large, char *aux)
 {
     fgets(aux, large, stdin);
@@ -94,6 +121,12 @@ char *Funciones::getString(int large, char *aux)
     return aux;
 }
 
+/**
+ * @brief validar
+ *
+ * @param puntero
+ * @return int
+ */
 int Funciones::validar(char *puntero)
 {
     int index, flag = 1, flagErrorParentesis = 0, errorSintax = 0, errorParentesis = 0, nada = 1;
@@ -174,6 +207,12 @@ int Funciones::validar(char *puntero)
     return flag;
 }
 
+/**
+ * @brief parentesis
+ *
+ * @param puntero
+ * @return int
+ */
 int Funciones::parentesis(char *puntero)
 {
     short index, flag, flagTermino;
@@ -236,6 +275,12 @@ int Funciones::parentesis(char *puntero)
     return flag;
 }
 
+/**
+ * @brief terminos
+ *
+ * @param puntero
+ * @return int
+ */
 int Funciones::terminos(char *puntero)
 {
     int index, flag = 0;
@@ -287,6 +332,13 @@ int Funciones::terminos(char *puntero)
     return flag;
 }
 
+/**
+ * @brief calculoSimple
+ *
+ * @param puntero
+ * @param largo
+ * @return double
+ */
 double Funciones::calculoSimple(char *puntero, int largo)
 {
     double *pNumeros;
@@ -301,6 +353,14 @@ double Funciones::calculoSimple(char *puntero, int largo)
     return output;
 }
 
+/**
+ * @brief insertNumberInString
+ *
+ * @param puntero
+ * @param largoInicio
+ * @param number
+ * @param pFin
+ */
 void Funciones::insertNumberInString(char *puntero, int largoInicio, double number, char *pFin)
 {
     char auxNumber[50] = {""};
@@ -312,6 +372,13 @@ void Funciones::insertNumberInString(char *puntero, int largoInicio, double numb
     strcpy(puntero, auxString);
 }
 
+/**
+ * @brief calculoTermino
+ *
+ * @param puntero
+ * @param largo
+ * @return double
+ */
 double Funciones::calculoTermino(char *puntero, int largo)
 {
     double *pNumeros;
@@ -356,6 +423,13 @@ double Funciones::calculoTermino(char *puntero, int largo)
     return output;
 }
 
+/**
+ * @brief numbersSetter
+ *
+ * @param puntero
+ * @param largo
+ * @return double*
+ */
 double *Funciones::numbersSetter(char *puntero, int largo)
 {
     int negativeFlag = 0, numFlag = 0, floatFlag = 0;
@@ -437,6 +511,13 @@ double *Funciones::numbersSetter(char *puntero, int largo)
     return auxNums;
 }
 
+/**
+ * @brief potencia
+ *
+ * @param numero
+ * @param potencia
+ * @return double
+ */
 double Funciones::potencia(double numero, double potencia)
 {
     double resultado = 1, aux;
