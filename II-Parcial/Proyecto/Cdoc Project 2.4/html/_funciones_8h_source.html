@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: Fichero Fuente Funciones.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Banner calculadora 2.0.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'Buscar','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Funciones.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_funciones_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#ifndef FUNCIONES_H</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#define FUNCIONES_H</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &lt;string.h&gt;</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &lt;conio.h&gt;</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#include &lt;windows.h&gt;</span> <span class="comment">// libreria para modificar la pantalla</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="_funciones_8h.html#ae0b4816fb45161ef9da5e6d6134ee28a">   22</a></span><span class="preprocessor">#define TAM 1000</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="_funciones_8h.html#a54af470c198f3dbe32eede2c32f3d746">   23</a></span><span class="preprocessor">#define F1 59</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="_funciones_8h.html#a4af1b6159e447ba72652bb7fcdfa726e">   24</a></span><span class="preprocessor">#define ESC 27</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="_funciones_8h.html#a08f9d5ca93d740ea817dfcb24bd0c5f3">   25</a></span><span class="preprocessor">#define Enter 13</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="_funciones_8h.html#acd7cf9e495f6f132893316affcc82f81">   26</a></span><span class="preprocessor">#define Atras 8</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="_funciones_8h.html#a75b7c02c1f64a7f19358c909b427e173">   27</a></span><span class="preprocessor">#define BIP 7</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="keyword">using namespace </span>std;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="class_funciones.html">   35</a></span><span class="keyword">class </span><a class="code hl_class" href="class_funciones.html">Funciones</a></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>{</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="class_funciones.html#af2882e96658199c5a02767c631371092">menu</a>();</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="class_funciones.html#a928a29379c06a819b3dfd9e107654371">operacionCombinada</a>();</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keywordtype">char</span> *<a class="code hl_function" href="class_funciones.html#a83f28cb43072d08d5d4339a652b81939">getString</a>(<span class="keywordtype">int</span>, <span class="keywordtype">char</span> *);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="class_funciones.html#a247a32b130ce89d54cb52bfd47120875">validar</a>(<span class="keywordtype">char</span> *);</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="class_funciones.html#aa7460f40fd09c347b3099a7469fe6b84">parentesis</a>(<span class="keywordtype">char</span> *);</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="class_funciones.html#ab37a4b227521a418071e78ebf53d65fb">terminos</a>(<span class="keywordtype">char</span> *);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keywordtype">double</span> <a class="code hl_function" href="class_funciones.html#abca48f620031373b1f8e64bd0808e7f1">calculoSimple</a>(<span class="keywordtype">char</span> *, <span class="keywordtype">int</span>);</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_funciones.html#a71e01da29d8926af2460732fdd670a31">insertNumberInString</a>(<span class="keywordtype">char</span> *, <span class="keywordtype">int</span>, <span class="keywordtype">double</span>, <span class="keywordtype">char</span> *);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keywordtype">double</span> <a class="code hl_function" href="class_funciones.html#a0ee46863ad537c8048ec19a579954dae">calculoTermino</a>(<span class="keywordtype">char</span> *, <span class="keywordtype">int</span>);</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keywordtype">double</span> *<a class="code hl_function" href="class_funciones.html#a5ce5843dcec5466e3a4bba60f892a96e">numbersSetter</a>(<span class="keywordtype">char</span> *, <span class="keywordtype">int</span>);</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keywordtype">double</span> <a class="code hl_function" href="class_funciones.html#af86bf7c940b42da25811ee2d05e07d3e">potencia</a>(<span class="keywordtype">double</span>, <span class="keywordtype">double</span>);</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>};</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="preprocessor">#endif </span><span class="comment">// FUNCIONES_H</span></div>
+<div class="ttc" id="aclass_funciones_html"><div class="ttname"><a href="class_funciones.html">Funciones</a></div><div class="ttdoc">Class Funciones.</div><div class="ttdef"><b>Definition:</b> Funciones.h:36</div></div>
+<div class="ttc" id="aclass_funciones_html_a0ee46863ad537c8048ec19a579954dae"><div class="ttname"><a href="class_funciones.html#a0ee46863ad537c8048ec19a579954dae">Funciones::calculoTermino</a></div><div class="ttdeci">double calculoTermino(char *, int)</div><div class="ttdoc">calculoTermino</div><div class="ttdef"><b>Definition:</b> Funciones.cpp:382</div></div>
+<div class="ttc" id="aclass_funciones_html_a247a32b130ce89d54cb52bfd47120875"><div class="ttname"><a href="class_funciones.html#a247a32b130ce89d54cb52bfd47120875">Funciones::validar</a></div><div class="ttdeci">int validar(char *)</div><div class="ttdoc">validar</div><div class="ttdef"><b>Definition:</b> Funciones.cpp:130</div></div>
+<div class="ttc" id="aclass_funciones_html_a5ce5843dcec5466e3a4bba60f892a96e"><div class="ttname"><a href="class_funciones.html#a5ce5843dcec5466e3a4bba60f892a96e">Funciones::numbersSetter</a></div><div class="ttdeci">double * numbersSetter(char *, int)</div><div class="ttdoc">numbersSetter</div><div class="ttdef"><b>Definition:</b> Funciones.cpp:433</div></div>
+<div class="ttc" id="aclass_funciones_html_a71e01da29d8926af2460732fdd670a31"><div class="ttname"><a href="class_funciones.html#a71e01da29d8926af2460732fdd670a31">Funciones::insertNumberInString</a></div><div class="ttdeci">void insertNumberInString(char *, int, double, char *)</div><div class="ttdoc">insertNumberInString</div><div class="ttdef"><b>Definition:</b> Funciones.cpp:364</div></div>
+<div class="ttc" id="aclass_funciones_html_a83f28cb43072d08d5d4339a652b81939"><div class="ttname"><a href="class_funciones.html#a83f28cb43072d08d5d4339a652b81939">Funciones::getString</a></div><div class="ttdeci">char * getString(int, char *)</div><div class="ttdoc">getString</div><div class="ttdef"><b>Definition:</b> Funciones.cpp:114</div></div>
+<div class="ttc" id="aclass_funciones_html_a928a29379c06a819b3dfd9e107654371"><div class="ttname"><a href="class_funciones.html#a928a29379c06a819b3dfd9e107654371">Funciones::operacionCombinada</a></div><div class="ttdeci">int operacionCombinada()</div><div class="ttdoc">operacionCombinada</div><div class="ttdef"><b>Definition:</b> Funciones.cpp:44</div></div>
+<div class="ttc" id="aclass_funciones_html_aa7460f40fd09c347b3099a7469fe6b84"><div class="ttname"><a href="class_funciones.html#aa7460f40fd09c347b3099a7469fe6b84">Funciones::parentesis</a></div><div class="ttdeci">int parentesis(char *)</div><div class="ttdoc">parentesis</div><div class="ttdef"><b>Definition:</b> Funciones.cpp:216</div></div>
+<div class="ttc" id="aclass_funciones_html_ab37a4b227521a418071e78ebf53d65fb"><div class="ttname"><a href="class_funciones.html#ab37a4b227521a418071e78ebf53d65fb">Funciones::terminos</a></div><div class="ttdeci">int terminos(char *)</div><div class="ttdoc">terminos</div><div class="ttdef"><b>Definition:</b> Funciones.cpp:284</div></div>
+<div class="ttc" id="aclass_funciones_html_abca48f620031373b1f8e64bd0808e7f1"><div class="ttname"><a href="class_funciones.html#abca48f620031373b1f8e64bd0808e7f1">Funciones::calculoSimple</a></div><div class="ttdeci">double calculoSimple(char *, int)</div><div class="ttdoc">calculoSimple</div><div class="ttdef"><b>Definition:</b> Funciones.cpp:342</div></div>
+<div class="ttc" id="aclass_funciones_html_af2882e96658199c5a02767c631371092"><div class="ttname"><a href="class_funciones.html#af2882e96658199c5a02767c631371092">Funciones::menu</a></div><div class="ttdeci">int menu()</div><div class="ttdoc">menu</div><div class="ttdef"><b>Definition:</b> Funciones.cpp:17</div></div>
+<div class="ttc" id="aclass_funciones_html_af86bf7c940b42da25811ee2d05e07d3e"><div class="ttname"><a href="class_funciones.html#af86bf7c940b42da25811ee2d05e07d3e">Funciones::potencia</a></div><div class="ttdeci">double potencia(double, double)</div><div class="ttdoc">potencia</div><div class="ttdef"><b>Definition:</b> Funciones.cpp:521</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+</small></address>
+</body>
+</html>

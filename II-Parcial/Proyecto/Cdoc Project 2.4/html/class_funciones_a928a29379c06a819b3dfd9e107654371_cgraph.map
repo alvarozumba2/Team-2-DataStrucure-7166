@@ -1,0 +1,12 @@
+<map id="Funciones::operacionCombinada" name="Funciones::operacionCombinada">
+<area shape="rect" id="node1" title="operacionCombinada" alt="" coords="5,78,216,104"/>
+<area shape="rect" id="node2" href="$class_funciones.html#abca48f620031373b1f8e64bd0808e7f1" title="calculoSimple" alt="" coords="463,19,633,46"/>
+<area shape="rect" id="node5" href="$class_funciones.html#a83f28cb43072d08d5d4339a652b81939" title="getString" alt="" coords="268,27,411,54"/>
+<area shape="rect" id="node6" href="$class_funciones.html#aa7460f40fd09c347b3099a7469fe6b84" title="parentesis" alt="" coords="264,78,415,104"/>
+<area shape="rect" id="node8" href="$class_funciones.html#ab37a4b227521a418071e78ebf53d65fb" title="terminos" alt="" coords="478,128,618,155"/>
+<area shape="rect" id="node10" href="$class_funciones.html#a247a32b130ce89d54cb52bfd47120875" title="validar" alt="" coords="276,179,403,206"/>
+<area shape="rect" id="node3" href="$class_funciones.html#a5ce5843dcec5466e3a4bba60f892a96e" title="numbersSetter" alt="" coords="907,86,1081,112"/>
+<area shape="rect" id="node4" href="$class_funciones.html#af86bf7c940b42da25811ee2d05e07d3e" title="potencia" alt="" coords="1129,111,1268,138"/>
+<area shape="rect" id="node7" href="$class_funciones.html#a71e01da29d8926af2460732fdd670a31" title="insertNumberInString" alt="" coords="681,70,859,112"/>
+<area shape="rect" id="node9" href="$class_funciones.html#a0ee46863ad537c8048ec19a579954dae" title="calculoTermino" alt="" coords="681,136,859,163"/>
+</map>

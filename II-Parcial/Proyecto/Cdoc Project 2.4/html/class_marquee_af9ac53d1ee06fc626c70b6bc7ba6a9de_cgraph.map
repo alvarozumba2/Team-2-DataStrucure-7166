@@ -1,0 +1,6 @@
+<map id="Marquee::Marquee" name="Marquee::Marquee">
+<area shape="rect" id="node1" title="Construct a new Marquee object." alt="" coords="5,31,136,57"/>
+<area shape="rect" id="node2" href="$class_marquee.html#a9a189bee62ceff08e1d1aefed0275d87" title="Impresion de marquesina." alt="" coords="184,31,315,57"/>
+<area shape="rect" id="node3" href="$class_marquee.html#abf897bb5be833eb450deb9142dbe7b73" title="Imprime en coordenadas." alt="" coords="363,5,517,32"/>
+<area shape="rect" id="node4" href="$class_marquee.html#a1396d52d72a49e136f0985a26f50a9dd" title="Ocultar cursor." alt="" coords="369,56,511,83"/>
+</map>
